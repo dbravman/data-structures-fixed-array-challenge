@@ -7,4 +7,10 @@ class FixedArray
   end
 
   def get(index)
+    if index >= @array.length
+      raise OutOfBoundsException
+    else
+      return @array[index]
+    end
+  end
 end
