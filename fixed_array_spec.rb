@@ -14,4 +14,8 @@ describe FixedArray do
     expect(fixed_array.set(0,"test")).to eq("test")
     expect {fixed_array.set(3,"test")}.to raise_error("OutOfBoundsException")
   end 
+
+  it "has length" do
+    expect(fixed_array.length).to eq(3)
+  end
 end
